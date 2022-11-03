@@ -25,7 +25,9 @@ public class Literals {
 		 * prefixed with zero.
 		 */
 		int x2 = 0777;
+		// [ 7*(8^2) + 7*(8^1) + 7*(8^0) = 511 ]
 		System.out.println(x2);// 511
+
 		// int x4 = 0778; //out of range
 
 		/*
@@ -36,13 +38,16 @@ public class Literals {
 		 */
 
 		int x3 = 0X10;
+		// [ 1*(16^1) + 1*(16^0) = 16 ]
 		System.out.println(x3);// 16
 
 		int x5 = 0XFACE;
+		// [ 15*(16^3) + 10*(16^2) + 12*(16^1) + 14*(16^0)= 64206 ]
 		int x7 = 0Xface;
 		System.out.println(x5 + " " + x7);// 64206 64206
 
 		int x6 = 0XFFFF;
+		// [ 15*(16^3) + 15*(16^2) + 15*(16^1) + 15*(16^0)= 65535 ]
 		System.out.println(x6);// 65535
 
 		// C.E: (invalid
@@ -156,6 +161,7 @@ public class Literals {
 		 * allowed digits are 0 to 1. Literal value should be prefixed with Ob or OB .
 		 */
 		int x9 = 0b1111;
+		// [ 1*(2^3) + 1*(2^2) + 1*(2^1) + 1*(2^0)= 15 ]
 		System.out.println(x9);// 15
 
 		/*
